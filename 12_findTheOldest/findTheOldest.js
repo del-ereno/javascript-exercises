@@ -7,8 +7,7 @@ const findTheOldest = function(arr) {
         return (person.yearOfDeath - person.yearOfBirth); 
     }
     const ageMap = arr.map(findAge);
-    const oldestIdx = ageMap.indexOf(Math.max(...ageMap));
-    return arr[oldestIdx];
+    return arr[ageMap.indexOf(Math.max(...ageMap))];
     
 
 };
